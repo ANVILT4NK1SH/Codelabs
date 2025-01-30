@@ -1,0 +1,11 @@
+h1, p{
+  background-color: antiquewhite;
+  font-size: large;
+  color: blue;
+}
+h1{
+  text-align: center;
+}
+img{
+  margin: 10px;
+}

@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+h2 {
+  color: #444;
+  font-size: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex; /** puts form elements in a flex box**/
+
+  flex-direction: column; /** Orders form elements in columns**/
+
+  align-items: center; /** Aligns elements in the center of their container**/
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px; /** space between the element and related content inside it**/
+
+  margin: 5px 0; /** space around the element**/
+
+  width: 200px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #0066cc; /** button background color **/
+
+  color: white; /** button text color**/
+  border: none;
+  cursor: pointer;
+}

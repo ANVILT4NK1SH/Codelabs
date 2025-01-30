@@ -1,0 +1,44 @@
+body{
+  background-color: antiquewhite;
+}
+
+h1, h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+  color: antiquewhite;
+}
+
+p{
+  font-size: 18px;
+  color: antiquewhite;
+}
+
+ul{
+  color: rgb(3, 91, 27);
+}
+
+.box-example{
+  width: 100%;
+  height: auto;
+  background-color: rgb(8, 8, 8);
+  color: antiquewhite;
+  padding: 100px;
+  margin: 50px;
+  border: 5px solid rgb(3, 91, 27);
+}
+
+.hobbies{
+  color: rgb(3, 91, 27);
+  font-size: 1.5rem;
+}
+
+#hobbiesHeading{
+  color: rgb(3, 91, 27);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label, input{
+  display: block;
+}
