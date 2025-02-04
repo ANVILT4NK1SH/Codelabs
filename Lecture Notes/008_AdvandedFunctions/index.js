@@ -39,7 +39,7 @@ const timeFunction = (timeOut, interval) => {
 	}, timeOut);
 
 	setInterval(() => {
-		console.log("Still wating...")
+		console.log("Still wating...");
 	}, interval);
 };
 
@@ -61,8 +61,8 @@ const timeFunction = (timeOut, interval) => {
 // multiplesFunction([1,1,2,3,4,5,5,5,6,7,8,9])
 
 const multiplesFunction = (nums) => {
-  multiples = nums.filter((num, i) => nums.indexOf(num) !== i);
-  console.log(multiples)
-}
+	multiples = nums.filter((num, i) => nums.indexOf(num) !== i);
+	console.log(multiples);
+};
 
-multiplesFunction([1,2,3,2,4,5,6,4,7])
+multiplesFunction([1, 2, 3, 2, 4, 5, 6, 4, 7]);
