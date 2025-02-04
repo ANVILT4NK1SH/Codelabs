@@ -60,9 +60,30 @@ const timeFunction = (timeOut, interval) => {
 
 // multiplesFunction([1,1,2,3,4,5,5,5,6,7,8,9])
 
-const multiplesFunction = (nums) => {
-	multiples = nums.filter((num, i) => nums.indexOf(num) !== i);
-	console.log(multiples);
+const duplicatesFunction = (nums) => {
+	return nums.reduce((acc, num, index, array)=>{
+    if ( array.indexOf(num) !== index && !acc.includes(num)){
+      acc.push(num);
+    }
+    return acc;
+  }, []);
 };
 
-multiplesFunction([1, 2, 3, 2, 4, 5, 6, 4, 7]);
+console.log(duplicatesFunction([1, 2, 3, 2, 4, 5, 6, 4, 7, 4, 2]));
+
+ const findDuplicates = (nums) => {
+  let seen = new Set();
+  let duplicates = new Set();
+
+  nums.forEach(num => {
+    if (seen.has(num)) {
+      duplicates.add(num);
+    }
+    seen.add(num);
+  });
+
+  console.log([...duplicates])
+  return [...duplicates]
+ }
+
+ findDuplicates([1,1,2,3,4,5,1,4,4,6,7,2,8,9])
