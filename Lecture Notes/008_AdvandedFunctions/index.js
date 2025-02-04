@@ -43,4 +43,26 @@ const timeFunction = (timeOut, interval) => {
 	}, interval);
 };
 
-timeFunction(5000, 2000);
+// timeFunction(5000, 2000);
+
+// const multiplesFunction = (nums) =>{
+//   let multiples = [];
+//   let k = 0;
+//   for(let i = 0; i < nums.length; i++){
+//     for(let j = 0; j < nums.length; j++){
+//       if(nums[i] === nums[j] && i!==j){
+//         multiples.push(nums[i]);
+//       }
+//     }
+//   }
+//   console.log(multiples)
+// }
+
+// multiplesFunction([1,1,2,3,4,5,5,5,6,7,8,9])
+
+const multiplesFunction = (nums) => {
+  multiples = nums.filter((num, i) => nums.indexOf(num) !== i);
+  console.log(multiples)
+}
+
+multiplesFunction([1,2,3,2,4,5,6,4,7])
