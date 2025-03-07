@@ -1,0 +1,5 @@
+
+
+
+let productName: string = 'laptop'
+
