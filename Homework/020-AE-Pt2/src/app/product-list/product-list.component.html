@@ -1,0 +1,9 @@
+<h2>Products:</h2>
+
+<ul>
+
+@for (product of products(); track product.name) {
+  <app-product-card [data]="product" />
+}
+
+</ul>

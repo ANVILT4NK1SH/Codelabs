@@ -10,8 +10,6 @@ import { User } from '../models/user-model';
 export class UserCardComponent {
   @Input() userName: string = "Shawn";
   @Input() userAge: number = 39;
-
-
 }
 
 
