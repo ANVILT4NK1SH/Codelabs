@@ -1,0 +1,13 @@
+<section>
+  <h2>Favorite Colors:</h2>
+  <ul>
+    @for (color of colors(); track color) {
+      <app-task-template [data]="color"/>
+      <button (click)="deleteHandler()">Delete</button>
+    }
+  </ul>
+
+  <input [(ngModel)]="userInput">
+
+  <button (click)="addColor()">Add Color</button>
+</section>

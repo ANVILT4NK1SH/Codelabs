@@ -1,0 +1,13 @@
+<section>
+  <h2>Task List:</h2>
+  <ul>
+    @for (task of tasks(); track task) {
+      <app-task-template [data]="task"/>
+    }
+    
+  </ul>
+<!-- two way binding -->
+  <input [(ngModel)]="userInput">
+
+  <button (click)="addTask()">Add Task</button>
+</section>
