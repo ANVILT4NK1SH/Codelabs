@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './click-counter.component.css'
 })
 export class ClickCounterComponent {
+  counter = 0;
 
+  counterHandler(){
+    this.counter++;    
+  }
 }

@@ -1,0 +1,12 @@
+<section>
+  <h1>Simple Calculator:</h1>
+  <input [(ngModel)]="num1" type="number"><br>
+  <input [(ngModel)]="num2" type="number"><br>
+  <button (click)="add()">+</button>
+  <button (click)="subtract()">-</button>
+  <button (click)="multiply()">x</button>
+  <button (click)="divide()">/</button><br>
+  <div>
+    <app-display-data-template [data]="total()" />
+  </div>
+</section>

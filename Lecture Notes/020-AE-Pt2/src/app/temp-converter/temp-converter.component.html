@@ -1,0 +1,6 @@
+<section>
+  <h1>Temperature Converter:</h1>
+  <input [(ngModel)]="tempInput" type="number" placeholder="Temperature in Celsius">
+  <button (click)="convertTemp()">Convert to Fahrenheit</button>
+  <app-display-data-template [data]="fahrenheit()"/>
+</section>

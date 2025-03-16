@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TaskListComponent } from "./task-list/task-list.component";
 import { FavoriteColorsComponent } from "./favorite-colors/favorite-colors.component";
+import { ClickCounterComponent } from "./click-counter/click-counter.component";
+import { TempConverterComponent } from "./temp-converter/temp-converter.component";
+import { CalculatorComponentComponent } from "./calculator-component/calculator-component.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TaskListComponent, FavoriteColorsComponent],
+  imports: [RouterOutlet, TaskListComponent, FavoriteColorsComponent, ClickCounterComponent, TempConverterComponent, CalculatorComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
