@@ -1,0 +1,13 @@
+<section>
+  <h1>Shopping List:</h1>
+  <ul>
+    @for (item of items(); track item) {
+      <app-task-template [data]="item"/>
+    }
+    
+  </ul>
+<!-- two way binding -->
+  <input [(ngModel)] ="userInput">
+
+  <button (click)="addItem()">Add Item</button>
+</section>

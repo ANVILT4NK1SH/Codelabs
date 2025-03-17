@@ -1,0 +1,14 @@
+<section>
+  <h1>Expense Tracker</h1>
+  <ul>
+    @for (expense of expenses(); track expense) {
+      <app-expenses-template [data]="expense"/>
+    }
+  </ul>
+  <p>Total Expenses: </p>
+  <app-display-data-template [data]="total() | currency:'USD':'symbol'" />
+  
+  <input [(ngModel)]="descriptionInput" type="text" placeholder="Description">
+  <input [(ngModel)]="amountInput"  type="number" placeholder="Amount">
+  <button (click)="addExpense()">Add Expense</button>
+</section>
