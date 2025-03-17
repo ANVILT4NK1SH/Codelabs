@@ -1,1 +1,5 @@
-<p>countdown-timer-component works!</p>
+<section>
+  <h1>Countdown Timer</h1>
+  <app-display-data-template [data]="timer()" />
+  <button [hidden]="!isVisible" (click)="startHandler()">Start</button>
+</section>
