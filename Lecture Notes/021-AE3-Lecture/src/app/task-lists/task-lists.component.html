@@ -1,0 +1,6 @@
+<h2>Tasks List:</h2>
+<ul>
+  @for (task of tasks(); track task.id) {
+    <app-task-item [task]="task" />
+  }@empty { <p>Task list is empty</p> }
+</ul>

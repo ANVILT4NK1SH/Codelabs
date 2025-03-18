@@ -1,0 +1,6 @@
+<section>
+  <h2>Favorite Books:</h2>
+  @for (book of books(); track $index) {
+    <app-book-component [book]="book"/>
+  }
+</section>

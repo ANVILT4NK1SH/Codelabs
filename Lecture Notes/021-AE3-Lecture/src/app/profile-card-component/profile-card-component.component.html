@@ -1,0 +1,6 @@
+<h1>User</h1>
+
+@if (isLoggedIn) {
+  <img [src]="user.avatar" alt="profile picture">
+  <p>{{ user.name }}</p>
+}@else { <p>Please Log In</p> }

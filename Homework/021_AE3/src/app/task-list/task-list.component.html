@@ -1,0 +1,7 @@
+<h2>Todo List:</h2>
+<ul>
+  @for (task of tasks(); track task.id) {
+    <app-task-item [task]="task"/>
+    <app-danger-btn (click)="deleteHandler()" [btnText]="btnText"/>
+  }@empty { <p>Task is empty</p> }
+</ul>
